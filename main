@@ -1,0 +1,11 @@
+student_list = [
+    {"name": "Forouzan", "age": 25},
+    {"name": "Shahin", "age": 30},
+    {"name": "Samaneh", "age": 20},
+    {"name": "Fatemeh", "age": 20},
+]
+
+student_list_sorted = sorted(student_list, key=lambda student: student["age"], reverse=True)
+
+for student in student_list_sorted:
+    print(f"{student['name']} {student['age']} yo")
